@@ -19,6 +19,7 @@ public class JdiPageTest {
 
   @Test
   public void testFirstScenario() {
+    System.setProperty("webdriver.chrome.driver", "src/test/java/driver/chromedriver.exe");
     driver = new ChromeDriver();
     driver.manage().window().fullscreen();
 //    driver.manage().timeouts().implicitlyWait();
